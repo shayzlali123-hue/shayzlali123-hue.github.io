@@ -67,7 +67,14 @@ nav{
 }
 
 .hero{max-width:1150px;margin:auto;padding:115px 24px 100px;position:relative;overflow:hidden}
+.hero > *:not(.glow){
+  position:relative;
+  z-index:1;
+}
 
+.glow{
+  z-index:0;
+}
 .glow{
   position:absolute;
   width:420px;
