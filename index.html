@@ -67,7 +67,30 @@ nav{
 }
 
 .hero{max-width:1150px;margin:auto;padding:115px 24px 100px;position:relative;overflow:hidden}
-.glow{position:absolute;width:360px;height:360px;background:#7755ff35;filter:blur(105px);border-radius:50%;top:20px;right:8%;pointer-events:none}
+
+.glow{
+  position:absolute;
+  width:420px;
+  height:420px;
+  background:radial-gradient(
+    circle,
+    #7955ff55 0%,
+    #5145ff25 40%,
+    transparent 72%
+  );
+  filter:blur(65px);
+  border-radius:50%;
+  top:0;
+  right:5%;
+  pointer-events:none;
+  animation:glowPulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse{
+  from{opacity:.65;transform:scale(.95)}
+  to{opacity:1;transform:scale(1.08)}
+}
+
 .tag{display:inline-block;border:1px solid #9b83ff66;color:#c2b5ff;border-radius:30px;padding:7px 15px;font-size:12px;letter-spacing:1px}
 h1{font-size:clamp(42px,7vw,76px);line-height:1.12;margin:25px 0;max-width:900px;letter-spacing:-2px}
 h1 span{background:linear-gradient(90deg,#a994ff,#55c8ff);background-clip:text;color:transparent}
