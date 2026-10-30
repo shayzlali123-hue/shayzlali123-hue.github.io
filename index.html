@@ -110,7 +110,38 @@ h2{font-size:clamp(30px,4vw,43px);margin:10px 0 15px}
 .contact p{color:var(--muted);margin:12px auto 25px;max-width:550px}
 footer{text-align:center;padding:30px 20px;border-top:1px solid #ffffff12;color:var(--muted);font-size:13px}
 @media(max-width:800px){.projects-grid,.process-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.navlinks{gap:9px;font-size:10px}.grid,.about,.projects-grid,.process-grid{grid-template-columns:1fr}.hero{padding-top:80px}.contact{padding:30px 18px}nav{padding:15px 12px}.logo{font-size:21px}}
+
+@media(max-width:600px){
+  .navlinks{
+    gap:3px;
+    font-size:10px;
+  }
+
+  .navlinks a{
+    padding:7px 6px;
+  }
+
+  .grid,.about,.projects-grid,.process-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:80px;
+  }
+
+  .contact{
+    padding:30px 18px;
+  }
+
+  nav{
+    padding:15px 10px;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+}
+
 </style>
 </head>
 <body>
