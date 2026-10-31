@@ -181,7 +181,48 @@ footer{text-align:center;padding:30px 20px;border-top:1px solid #ffffff12;color:
     font-size:20px;
   }
 }
+/* STRONG PURPLE HERO GLOW */
+.hero{
+  isolation:isolate;
+}
 
+.hero .glow{
+  display:block !important;
+  position:absolute;
+  z-index:0;
+  width:600px;
+  height:600px;
+  top:-80px;
+  right:-30px;
+  border-radius:50%;
+  background:radial-gradient(
+    circle,
+    rgba(130,90,255,.85) 0%,
+    rgba(100,70,255,.45) 35%,
+    rgba(80,60,255,.15) 55%,
+    transparent 72%
+  );
+  filter:blur(45px);
+  opacity:1;
+  pointer-events:none;
+  animation:glowPulse 5s ease-in-out infinite alternate;
+}
+
+.hero > *:not(.glow){
+  position:relative;
+  z-index:1;
+}
+
+@keyframes glowPulse{
+  from{
+    transform:scale(.9);
+    opacity:.7;
+  }
+  to{
+    transform:scale(1.1);
+    opacity:1;
+  }
+}
 </style>
 </head>
 <body>
